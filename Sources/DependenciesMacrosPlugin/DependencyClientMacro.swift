@@ -120,6 +120,8 @@ public enum DependencyClientMacro: MemberAttributeMacro, MemberMacro {
           if accessors.contains(where: { $0.accessorSpecifier.tokenKind == .keyword(.get) }) {
             continue
           }
+        default:
+          break
         }
       }
 
